@@ -1,0 +1,22 @@
+.cover__overlay {
+  width: 100%;
+  min-height: calc(100vw / 1.6); /* вычисляем высоту от ширины экрана/картинки */
+  background: #2A2C2F;
+  position: absolute;
+  opacity: .3;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  .cover__overlay {
+    min-height: 740px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__overlay {
+    margin: 0;
+  }
+}

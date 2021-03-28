@@ -1,0 +1,12 @@
+.place__image {
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .place__image {
+    /* "вытягиваем" изображения из родительских отступов и границ */
+    margin-left: -16px;
+    margin-right: -16px;
+    width: 100vw;
+  }
+} 

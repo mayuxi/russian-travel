@@ -1,0 +1,19 @@
+.cover__link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vw / 1.6); /* вычисляем высоту от ширины экрана */
+}
+
+.cover__link:hover .cover__overlay {
+  opacity: .8;
+}
+
+@media screen and (min-width: 1280px) {
+  .cover__link {
+    min-height: 740px;
+  }
+}

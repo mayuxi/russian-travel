@@ -8,9 +8,21 @@
   min-height: calc(100vw / 1.6); /* вычисляем высоту от ширины экрана */
 }
 
-.cover__link:hover .cover__overlay {
-  opacity: .8;
+.cover__link::before {
+  content: '';
+  background: #2A2C2F;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
 }
+
+.cover__link:hover::before {
+  opacity: 0.8;
+} 
 
 @media screen and (min-width: 1280px) {
   .cover__link {
